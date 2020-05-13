@@ -1,0 +1,23 @@
+/* ============================================= */
+/*                   Mixins                      */
+/* ============================================= */
+
+//Small Breakpoint 
+
+@mixin bp-small {
+    @media only screen and (min-width:768px) {
+        @content;
+    }
+}
+
+
+//Button Hover Effect 
+
+@mixin btn-hover($bg-color) {
+    background-color: $bg-color;
+    &:hover {
+        background-color: lighten($bg-color, 15%);
+        transition: background-color 2s ease;
+           
+    }
+}

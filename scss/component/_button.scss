@@ -1,0 +1,45 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $quaternary-color;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+    @include bp-small{
+      padding: 10px 30px;
+
+      & + .btn {
+        margin-left: 10px;
+      }
+    }
+
+  }
+
+  
+  
+  .default {
+    @include btn-hover($tertiary-color);
+  }
+  
+  .error {
+    @include btn-hover(#e4757a);
+  }
+  
+  .info {
+    @include btn-hover(#927bc1);
+  }
+  
+  .success {
+    @include btn-hover(#63cc82);
+  }
+  
+  .warning {
+    @include btn-hover($quinary-color);
+  }
+  
